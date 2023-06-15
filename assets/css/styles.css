@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap');
 
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4.5rem;
 
   --first-color: hsl(19, 64%, 54%);
   --first-color-alt: hsl(19, 64%, 52%);
@@ -113,4 +113,109 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--body-color);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: box-shadow 0.3s, background 0.4s;
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle,
+.nav__close {
+  display: flex;
+  color: var(--title-color);
+}
+
+.nav__logo {
+  align-items: center;
+  column-gap: 0.5rem;
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.3s;
+}
+
+.nav__logo img {
+  width: 250px;
+}
+
+/* .nav__logo:hover {
+  color: var(--first-color);
+} */
+
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    box-shadow: 0 8px 20px hsla(19, 64%, 24%, 0.1);
+    padding-block: 3.5rem;
+    transition: top 0.4s;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: color 0.4s;
+  }
+
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav__img-1,
+  .nav__img-2 {
+    position: absolute;
+    opacity: 0.2;
+  }
+
+  .nav__img-1 {
+    width: 100px;
+    top: 0.75rem;
+    left: -2rem;
+    transform: rotate(165deg);
+  }
+
+  .nav__img-2 {
+    width: 50px;
+    right: -1rem;
+    bottom: 0;
+    transform: rotate(-30deg);
+  }
 }
