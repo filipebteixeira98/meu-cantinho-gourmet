@@ -219,3 +219,7 @@ img {
     transform: rotate(-30deg);
   }
 }
+
+.show-menu {
+  top: 0;
+}
