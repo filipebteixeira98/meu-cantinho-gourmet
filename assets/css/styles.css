@@ -224,6 +224,10 @@ img {
   top: 0;
 }
 
+.bg-header {
+  box-shadow: 0 2px 8px hsla(19, 64%, 24%, 0.1);
+}
+
 .home {
   position: relative;
 }
