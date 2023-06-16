@@ -312,3 +312,40 @@ img {
 .button:hover i {
   transform: translateX(0.25rem);
 }
+
+.about {
+  position: relative;
+}
+
+.about__container {
+  row-gap: 3rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__title img {
+  width: 50px;
+}
+
+.about__title div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.about__img {
+  width: 300px;
+  justify-self: center;
+}
+
+.about__leaf {
+  width: 100px;
+  opacity: 0.2;
+  position: absolute;
+  right: -1.5rem;
+  bottom: 11rem;
+  transform: rotate(-15deg);
+}
