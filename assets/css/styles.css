@@ -417,3 +417,53 @@ img {
 .popular__card:hover .popular__img {
   transform: translateY(-0.25rem);
 }
+
+.recently {
+  position: relative;
+}
+
+.recently__container {
+  row-gap: 4rem;
+}
+
+.recently__data {
+  position: relative;
+  text-align: center;
+}
+
+.recently__description {
+  margin-bottom: 2rem;
+}
+
+.recently__data-img {
+  width: 65px;
+  position: absolute;
+  top: 0.15rem;
+  right: 0.1rem;
+  // transform: rotate(30deg);
+}
+
+.recently__img {
+  width: 300px;
+  justify-self: center;
+}
+
+.recently__leaf-1,
+.recently__leaf-2 {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.recently__leaf-1 {
+  width: 80px;
+  top: 17rem;
+  left: -1rem;
+  transform: rotate(15deg);
+}
+
+.recently__leaf-2 {
+  width: 40px;
+  right: -1rem;
+  bottom: 12rem;
+  transform: rotate(-30deg);
+}
