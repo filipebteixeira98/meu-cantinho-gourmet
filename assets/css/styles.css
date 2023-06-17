@@ -436,10 +436,10 @@ img {
 }
 
 .recently__data-img {
-  width: 65px;
+  width: 60px;
   position: absolute;
-  top: 0.15rem;
-  right: 0.1rem;
+  top: 1.5rem;
+  right: 0.05rem;
   // transform: rotate(30deg);
 }
 
