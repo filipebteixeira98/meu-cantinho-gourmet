@@ -658,3 +658,18 @@ img {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(19, 8%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(19, 8%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(19, 8%, 55%);
+}
