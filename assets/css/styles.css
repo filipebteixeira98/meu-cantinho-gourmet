@@ -761,3 +761,58 @@ body.dark-theme {
 .show-scroll {
   bottom: 3rem;
 }
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .section {
+    padding-block: 4rem 1rem;
+  }
+
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__leaf-1 {
+    top: 5rem;
+  }
+
+  .home__leaf-2 {
+    bottom: 0;
+  }
+
+  .about__leaf {
+    bottom: 8rem;
+  }
+
+  .recently__data-img {
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .newsletter__content {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    background: none;
+    row-gap: 1rem;
+  }
+
+  .newsletter__input {
+    width: initial;
+    padding: 1rem;
+    border-radius: 4rem;
+  }
+
+  .newsletter__button {
+    justify-content: center;
+  }
+
+  .footer__content {
+    gap: 1.5rem;
+  }
+}
